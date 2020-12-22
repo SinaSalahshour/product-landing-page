@@ -1,0 +1,44 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  padding: 2em 3.5em;
+}
+
+.brand-logo {
+  width: 18vw;
+}
+
+.nav-items ul {
+  display: flex;
+  list-style: none;
+  font-weight: thin;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  color: #676666;
+}
+
+.nav-items ul li a {
+  text-decoration: none;
+  color: #676666;
+  padding: 0 1.2em;
+  cursor: pointer;
+}
+
+.nav-items ul li a:hover {
+  color: #9b9b9b;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-items {
+    display: none;
+  }
+
+  .main-header {
+    justify-content: center;
+  }
+
+  .brand-logo {
+    width: 125px;
+  }
+}
