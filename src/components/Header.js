@@ -1,23 +1,60 @@
-import React from "react";
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-import "./Header.css"
-import logo from '../images/Fender_guitars_logo.svg.png';
+import "./Header.css";
+import logo from "../images/Fender_guitars_logo.svg.png";
 
 const Header = () => {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
-    <header className="main-header">
-      <NavLink className="brand-logo-link" to="/">
-        <img className="brand-logo" src={logo} alt="Fender Logo"/>
-      </NavLink>
-      <div className="nav-items">
-        <ul>
-          <li><NavLink to="/features">Features</NavLink></li>
-          <li><NavLink to="/about">About</NavLink></li>
-          <li><NavLink to="/pricing">Pricing</NavLink></li>
+    <>
+      <nav className="navbar">
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+          <img className="navbar-img" src={logo} alt=""/>
+        </Link>
+        <div className="menu-icon" onClick={handleClick}>
+          {click ? (
+            <FaTimes className="fas fa-times" />
+          ) : (
+            <FaBars className="fas fa-bars" />
+          )}
+        </div>
+        <ul className={click ? "nav-menu active" : "nav-menu"}>
+          <li className="nav-item">
+            <Link
+              to="/features"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Features
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/about"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              About
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/pricing"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Pricing
+            </Link>
+          </li>
         </ul>
-      </div>
-    </header>
+      </nav>
+    </>
   );
 };
 
