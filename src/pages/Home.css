@@ -53,7 +53,7 @@ body,
   max-width: 500px;
 }
 
-.buy-btn {
+.container .buy-btn {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -87,8 +87,13 @@ body,
 @media screen and (max-width: 725px) {
   .home-main-section {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+
     padding: 2em 1em 2em 1em;
+  }
+
+  .title {
+    align-items: center;
   }
 
   .home-main-section .image-section {
@@ -96,8 +101,8 @@ body,
     margin: 2em 0 0 0;
   }
 
-  .buy-btn {
-    font-size: 16px;
-    margin: 2.8em 2em 2.8em 2em;
+  .container .buy-btn {
+    font-size: 18px;
+    margin: 2.5em 1em;
   }
 }
