@@ -36,11 +36,11 @@ const Header = () => {
           </li>
           <li className="nav-item">
             <Link
-              to="/about"
+              to="/specs"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              About
+              Specs
             </Link>
           </li>
           <li className="nav-item">

@@ -66,7 +66,7 @@
 
   .features-row {
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content:center;
   }
 
   .features-col {

@@ -1,7 +1,7 @@
 import React from "react";
 
 import FeaturesComponent from "../../components/FeaturesComponent";
-import { featuresObjOne, featuresObjThree, featuresObjTwo, featuresObjFour } from "./Data";
+import { featuresObjOne, featuresObjThree, featuresObjTwo, featuresObjFour } from "./FeaturesData";
 
 const Features = () => {
   return (

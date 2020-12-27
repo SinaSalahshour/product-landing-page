@@ -65,6 +65,7 @@
 
   .navbar {
     justify-content: center;
+    height: 80px;
   }
 
   .nav-menu {
@@ -75,7 +76,7 @@
     color: #666;
     vertical-align: top;
     position: absolute;
-    top: 75px;
+    top: 60px;
     left: -100%;
     width: 100%;
     height: auto;
@@ -122,7 +123,7 @@
   .menu-icon {
     display: block;
     position: absolute;
-    top: 0;
+    top: -7.5px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;

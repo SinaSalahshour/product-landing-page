@@ -1,10 +1,12 @@
 import React from "react";
 import ReactPlayer from "react-player/youtube";
+import ProductInfo from "../components/ProductInfo";
 
-import "./About.css";
+import "./Specs.css";
 
-const About = () => {
+const Specs = () => {
   return (
+    <>
     <div className="specs-main-section">
       <div className="specs-text-section">
         <h6 className="specs-heading">Key Specs</h6>
@@ -33,11 +35,17 @@ const About = () => {
           controls={true}
         />
       </div>
+      
       <button type="submit" className="buy-btn">
         Buy Now
       </button>
     </div>
+    <div className="product-info">
+      <ProductInfo />
+    </div>
+    
+    </>
   );
 };
 
-export default About;
+export default Specs;
