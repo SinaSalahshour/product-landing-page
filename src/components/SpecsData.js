@@ -24,21 +24,21 @@ export const SpecsData = {
     "Bridge Pickup": "Seymour Duncan® JB Jr.™ SJBJ-1B",
     "Middle Pickup": "Custom Shop Texas Special™ Single-Coil Strat®",
     "Neck Pickup": "Sustainer Driver",
-    "Controls":
+    Controls:
       "Master Volume, Master Tone, Intensity Control, Active Sustainer® On/Off Switch, Harmonic/Blend Switch",
-    "Switching":
+    Switching:
       "5-Position Blade: Position 1. Bridge Pickup Position 2. Bridge and Middle Pickup Position 3. Middle Pickup Position 4. Middle and Neck Pickup Position 5. Neck Pickup",
-    "Configuration": "HSH",
+    Configuration: "HSH",
     "Special Electronics":
       "Active Sustainer® Driver/Pickup Powered by 9-Volt Battery",
   },
   SpecsHardware: {
-    "Bridge": "6-Saddle Vintage-Style Synchronized Tremolo",
+    Bridge: "6-Saddle Vintage-Style Synchronized Tremolo",
     "Hardware Finish": "Nickel/Chrome",
     "Tuning Machines": "Vintage-Style",
-    "Pickgaurd": "3-ply Parchment",
+    Pickgaurd: "3-ply Parchment",
     "Control Knob": "White Plastic",
     "Switch Tip": "White",
     "Neck Plate": "Custom EOB Logo",
-  }
+  },
 };

@@ -14,9 +14,9 @@
 .navbar-img {
   cursor: pointer;
   text-decoration: none;
-  width: 18vw;
-  min-width: 200px;
-  max-width: 260px;
+  width: 17vw;
+  min-width: 185px;
+  max-width: 225px;
   box-sizing: border-box;
   padding: 2em 2em;
 }

@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <nav className="navbar">
         <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          <img className="navbar-img" src={logo} alt=""/>
+          <img className="navbar-img" src={logo} alt="" />
         </Link>
         <div className="menu-icon" onClick={handleClick}>
           {click ? (
@@ -26,6 +26,11 @@ const Header = () => {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
             <Link
               to="/features"
               className="nav-links"
@@ -35,21 +40,8 @@ const Header = () => {
             </Link>
           </li>
           <li className="nav-item">
-            <Link
-              to="/specs"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/specs" className="nav-links" onClick={closeMobileMenu}>
               Specs
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/pricing"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Pricing
             </Link>
           </li>
         </ul>

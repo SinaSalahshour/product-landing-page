@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className="image-section"></div>
         <button type="submit" className="buy-btn">
-          Buy Now
+          NOTIFY ME WHEN IN STOCK
         </button>
       </div>
     </div>
