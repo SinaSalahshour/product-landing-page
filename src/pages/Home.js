@@ -14,9 +14,11 @@ const Home = () => {
           <h1 className="title">Ed O'Brien Sustainer Stratocaster</h1>
         </div>
         <div className="image-section"></div>
-        <button type="submit" className="buy-btn">
+        .buttons-div
+        <button type="submit" className="buy-btn red-btn">
           NOTIFY ME WHEN IN STOCK
         </button>
+
       </div>
     </div>
   );
